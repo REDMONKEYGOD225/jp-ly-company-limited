@@ -89,6 +89,12 @@ img:hover {
     text-transform: uppercase;
 }
 
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* --- Footer --- */
 footer {
     margin-top: 60px;
