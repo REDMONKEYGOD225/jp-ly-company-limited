@@ -1,150 +1,98 @@
-/* --- Style global --- */
+/* --- Reset et style global --- */
 body {
     margin: 0;
+    background: #000;
     font-family: "Montserrat", sans-serif;
-    background: radial-gradient(circle at top, #0a0a0a, #000);
     color: white;
-    overflow-x: hidden;
 }
 
-/* --- Header et navigation --- */
-header {
-    margin-top: 40px;
+center {
+    width: 100%;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+/* --- Navigation header --- */
+header div {
+    margin: 40px 0 20px;
 }
 
-header .menu_rec {
+.menu_rec {
     display: inline-block;
     padding: 12px 25px;
+    margin: 0 10px;
     border: 1px solid rgba(255, 215, 0, 0.7);
     border-radius: 30px;
     color: gold;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600;
-    transition: all 0.3s ease;
     background: rgba(255, 255, 255, 0.05);
-    text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    text-align: center;
 }
 
-header .menu_rec:hover {
+.menu_rec:hover {
     background: linear-gradient(45deg, gold, #fff4b0);
     color: black;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
 }
 
-/* --- Section principale --- */
-main {
-    padding: 40px 20px;
-}
-
-/* --- Tableau des produits --- */
+/* --- Tableau produit --- */
 table {
-    margin: 40px auto;
     border-collapse: separate;
-    border-spacing: 15px;
-    border-radius: 15px;
+    border-spacing: 30px 20px;
+    margin: 40px auto;
+    max-width: 900px;
 }
 
 td {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    padding: 10px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 td:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(255, 215, 0, 0.5);
 }
 
 /* --- Images --- */
 img {
+    width: 180px; /* largeur fixe mais adaptée */
+    height: auto;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    transition: all 0.4s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
 }
 
 img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.8);
 }
 
-/* --- Noms des produits --- */
-.product-names {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.product-names .menu_rec {
-    margin: 15px;
+/* --- Noms produits sous images --- */
+.product-name {
+    margin-top: 12px;
+    padding: 6px 15px;
     display: inline-block;
-    padding: 10px 25px;
-    border: 1px solid rgba(255, 215, 0, 0.6);
-    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1em;
     color: gold;
-    font-weight: 600;
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    background: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.product-names .menu_rec:hover {
-    background: linear-gradient(45deg, gold, #fff4b0);
-    color: black;
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
 }
 
 /* --- Footer --- */
 footer {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9em;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 60px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* --- Animation d’apparition --- */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-td, .menu_rec, footer {
-    animation: fadeUp 1s ease-out;
-}
-
-/* --- Sélection du texte --- */
-::selection {
-    background: gold;
-    color: black;
-}
-
-/* --- Titre optionnel au-dessus du tableau --- */
-.main-title {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 700;
-    color: gold;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: fadeUp 1s ease-out;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    font-size: 0.9em;
 }
