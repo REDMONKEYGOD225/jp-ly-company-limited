@@ -1,0 +1,79 @@
+/* --- Style global --- */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* --- Titre principal --- */
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+/* --- Sous-titre --- */
+h3 {
+    font-weight: 300;
+    max-width: 70%;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    text-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* --- Menu principal --- */
+.menu_rec {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 12px 25px;
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+}
+
+.menu_rec:hover {
+    background: linear-gradient(45deg, gold, rgb(255, 240, 200));
+    color: black;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+/* --- Section images --- */
+.image-section {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.image-section img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(255,215,0,0.4);
+}
+
+/* --- Footer --- */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
