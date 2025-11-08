@@ -63,12 +63,14 @@ td:hover {
 
 /* --- Images --- */
 img {
-    width: 180px; /* largeur fixe mais adaptée */
-    height: auto;
+    width: 180px;       /* largeur fixe */
+    height: 240px;      /* hauteur fixe, tu peux ajuster selon ce qui te convient */
     border-radius: 15px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease;
+    object-fit: cover;  /* pour garder l'image bien remplie et sans déformation */
 }
+
 
 img:hover {
     transform: scale(1.05);
