@@ -1,24 +1,90 @@
-/* --- Page présentation --- */
-.presentation-content {
-    max-width: 80%;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px 50px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
-    line-height: 1.8;
-    font-size: 1.1em;
+/* Reset minimal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: "Montserrat", sans-serif;
     color: white;
-    text-align: justify;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.presentation-content:hover {
-    transform: scale(1.01);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+/* Header */
+header {
+    background-color: rgba(255, 215, 0, 0.1);
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.15);
 }
 
-.presentation-content b {
+nav ul.menu_rec {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul.menu_rec li a {
     color: gold;
     font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul.menu_rec li a:hover,
+nav ul.menu_rec li a:focus {
+    background: linear-gradient(45deg, gold, #fff4b0);
+    color: black;
+    border-color: gold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.presentation-section h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    color: gold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.presentation-section hr {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 80%;
+    margin: 0 auto 30px;
+}
+
+.presentation-section p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: white;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 215, 0, 0.1);
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(255, 215, 0, 0.8);
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    font-size: 0.9rem;
 }
