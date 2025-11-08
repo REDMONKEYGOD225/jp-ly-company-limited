@@ -1,0 +1,112 @@
+/* --- Reset minimal --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Navigation header --- */
+header {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.15);
+}
+
+nav ul.menu_rec {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul.menu_rec li a {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 1px solid rgba(255, 215, 0, 0.7);
+    border-radius: 30px;
+    color: gold;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+nav ul.menu_rec li a:hover {
+    background: linear-gradient(45deg, gold, #fff4b0);
+    color: black;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+/* --- Main content: contacts --- */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contacts {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-card {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.5);
+    border-radius: 15px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    min-width: 250px;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.7);
+}
+
+.contact-card h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: gold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-card p {
+    font-size: 1.2em;
+    color: white;
+    font-weight: 500;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(255, 215, 0, 0.1);
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    color: rgba(255, 215, 0, 0.7);
+    font-weight: 600;
+    font-size: 0.9em;
+}
